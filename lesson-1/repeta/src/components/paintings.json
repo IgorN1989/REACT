@@ -1,0 +1,29 @@
+[
+  {
+    "id": "id-1",
+    "imageUrl": "https://d7hftxdivxxvm.cloudfront.net/?quality=80&resize_to=width&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F0pCJH1Aw2tIyJfvlf32LVQ%2Fnormalized.jpg&width=910",
+    "title": "Texture Abstract",
+    "profileUrl": "https://pixabay.com/users/igorn1989-32119761/",
+    "author": "IgorN1989",
+    "price": 500,
+    "quantity": 10
+  },
+  {
+    "id": "id-2",
+    "imageUrl": "https://as1.ftcdn.net/v2/jpg/02/73/22/74/1000_F_273227473_N0WRQuX3uZCJJxlHKYZF44uaJAkh2xLG.jpg",
+    "title": "Fluorite",
+    "profileUrl": "https://pixabay.com/users/igorn1989-32119761/",
+    "author": "IgorN1989",
+    "price": 400,
+    "quantity": 15
+  },
+  {
+    "id": "id-3",
+    "imageUrl": "https://i1.wp.com/zet.gallery/blog/wp-content/uploads/2016/02/Salvador-Dali-The-Persistence-of-Memory-Famous-Oil-Paintings-www.shairart.com_.jpg?resize=1024%2C753",
+    "title": "The Persistence of Memory",
+    "profileUrl": "https://pixabay.com/users/igorn1989-32119761/",
+    "author": "IgorN1989",
+    "price": 600,
+    "quantity": 5
+  }
+]
