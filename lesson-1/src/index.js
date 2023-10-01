@@ -1,3 +1,5 @@
+// =========================== Repeta ===========================
+
 // import React from 'react';
 // import ReactDOM from 'react-dom/client';
 // import './index.css';
@@ -19,7 +21,7 @@
 // ===================================================================================
 
 // import React from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 
 // ===================================================================================
 
@@ -90,6 +92,61 @@ import ReactDOM from 'react-dom';
 // ReactDOM.render(<Painting a="5" b={10} />, document.querySelector('#root'));
 
 // ==================================================================================
-import App from './App';
+// import App from './App';
 
-ReactDOM.render(<App/>, document.querySelector('#root'));
+// ReactDOM.render(<App/>, document.querySelector('#root'));
+
+// =========================== Repeta ===========================
+
+// ==================================================================================
+// ==================================================================================
+// ==================================================================================
+// ==================================================================================
+// ==================================================================================
+
+// =========================== Aliev-Lomach ===========================
+
+// import React from 'react';
+// import ReactDOM from 'react-dom/client';
+// import { Card } from './components/Card';
+
+// import './index.css';
+
+// =================================================================
+
+// const root = document.getElementById('root');
+
+// const paragraph = React.createElement('p', {
+//   id: 'test-P-Id',
+//   children: ['I am P'],
+// });
+
+// const div = React.createElement('div', {
+//   name: 'main',
+//   id: 'test-Id',
+//   className: 'test-className',
+//   children: ['Hello', ' ', 'React', ' ', 'from', ' ', 'UA', paragraph],
+// });
+// console.log(div);
+
+// ReactDOM.createRoot(root).render(div);
+
+// =================================================================
+
+// const root = document.getElementById('root');
+
+// const p = <p id="test-Id">I am P</p>;
+
+// const div = (
+//   <div name="main" id="test-Id" className="test-className">
+//     {p}
+//   </div>
+// );
+
+// console.log(div);
+
+// ReactDOM.createRoot(root).render(div);
+
+// =================================================================
+
+// ReactDOM.createRoot(document.getElementById('root')).render(<Card />);
