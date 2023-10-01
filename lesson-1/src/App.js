@@ -35,16 +35,44 @@
 // ==================================================================================
 
 // =========================== Ovdienko ===========================
-import { Header } from './components/ovdienko/Header';
-import { Content } from './components/ovdienko/Content';
+// import { Header } from './components/ovdienko/Header';
+// import { Content } from './components/ovdienko/Content';
 
-function App() {
-  return (
-    <div>
-      <Header />
-      <Content />
-    </div>
-  );
-}
+// function App() {
+//   return (
+//     <div>
+//       <Header />
+//       <Content />
+//     </div>
+//   );
+// }
 
-export default App;
+// export default App;
+
+// ==================================================================================
+// import { ChatTitle } from './components/ovdienko/ChatTitle';
+// import { ChatUser } from './components/ovdienko/ChatUser';
+
+// const USERS = [
+//   { id: 'id-1', name: 'James', isActive: true },
+//   { id: 'id-2', name: 'Mary', isActive: true },
+//   { id: 'id-3', name: 'Lisa', isActive: false },
+//   { id: 'id-4', name: 'John', isActive: false },
+// ];
+
+// function App() {
+//   return (
+//     <div>
+//       <ChatTitle />
+//       {USERS.map(item => {
+//         return (
+//           <ChatUser key={item.id} active={item.isActive}>
+//             {item.name}
+//           </ChatUser>
+//         );
+//       })}
+//     </div>
+//   );
+// }
+
+// export default App;
