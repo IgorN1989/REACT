@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Protecting the outer rim",
+        "location": "Corvus, Jangala",
+        "speaker": "Jacob Mercer",
+        "type": "free",
+        "time": {
+            "start": "2023-11-17T14:30:00",
+            "end": "2023-11-17T16:30:00"
+        }
+    },
+    {
+        "name": "The art of spying",
+        "location": "Barad sector, Asharu",
+        "speaker": "Artemis Tau",
+        "type": "free",
+        "time": {
+            "start": "2023-11-12T14:30:00",
+            "end": "2023-11-12T16:30:00"
+        }
+    },
+    {
+        "name": "Protecting",
+        "location": "Corvus, Jangala",
+        "speaker": "Jacob Mercer",
+        "type": "paid",
+        "time": {
+            "start": "2023-11-17T14:30:00",
+            "end": "2023-11-17T16:30:00"
+        }
+    },
+    {
+        "name": "Qwerty",
+        "location": "Corvus, Jangala",
+        "speaker": "Jacob Mercer",
+        "type": "vip",
+        "time": {
+            "start": "2023-11-17T14:30:00",
+            "end": "2023-11-17T16:30:00"
+        }
+    }
+]
