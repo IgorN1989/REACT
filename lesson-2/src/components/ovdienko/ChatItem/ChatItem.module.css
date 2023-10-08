@@ -1,0 +1,17 @@
+.chatItem {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  padding: 4px 8px;
+  border: 2px solid black;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.chat-item:hover {
+  background-color: rgba(45, 204, 255, 0.2);
+}
+
+.name {
+  margin-left: 8px;
+}

@@ -10,17 +10,38 @@
 //   </ThemeProvider>
 // );
 
-
-// =======================================REPETA==========================================
-
 // =======================================================================================
 // =======================================================================================
 // =======================================================================================
 // =======================================================================================
 // =======================================================================================
 
-import React from 'react';
+// import React from 'react';
+// import ReactDOM from 'react-dom/client';
+// import App from './components/aliev-lomach/App'
+
+// ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
+// =======================================================================================
+// =======================================================================================
+// =======================================================================================
+// =======================================================================================
+// =======================================================================================
+
+// import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './components/aliev-lomach/App'
+import { App } from './components/ovdienko/App';
+import { heroes, randomizeStatuses, sortHeroes } from './heroes';
 
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+function renderApp() {
+  root.render(<App data={sortHeroes(heroes)} />);
+}
+
+renderApp();
+
+// setInterval(() => {
+//   randomizeStatuses();
+//   renderApp();
+// }, 5000);
