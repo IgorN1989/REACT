@@ -13,6 +13,10 @@
   outline: 3px solid tomato;
 }
 
+.TodoList__item--completed {
+  background-color: greenyellow;
+}
+
 .TodoList__text {
     margin: 5px;
 }
