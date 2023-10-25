@@ -6,6 +6,7 @@ import './App.css';
 // import ColorPicker from './Components/ColorPicker';
 import TodoList from './Components/ToDoList';
 import TodoEditor from './Components/ToDoEditor';
+import Filter from './Components/Filter';
 
 // import { colorPickerOptions } from './data/colorPickerOptions';
 import initialTodos from './data/todos.json';
@@ -50,6 +51,7 @@ import initialTodos from './data/todos.json';
 class App extends Component {
   state = {
     todos: initialTodos,
+    filter: '',
   };
 
   addTodo = text => {
@@ -80,14 +82,33 @@ class App extends Component {
     }));
   };
 
-  render() {
-    const { todos } = this.state;
+  changeFilter = e => {
+    this.setState({ filter: e.currentTarget.value });
+  };
 
-    const totalTodoCount = todos.length;
-    const completedTodosCount = todos.reduce(
+  getVisibleTodos = () => {
+    const { todos, filter } = this.state;
+    const normolizedFilter = filter.toLowerCase();
+
+    return todos.filter(todo =>
+      todo.text.toLowerCase().includes(normolizedFilter)
+    );
+  };
+
+  calculateCompletedTodos = () => {
+    const { todos } = this.state;
+    return todos.reduce(
       (total, todo) => (todo.completed ? total + 1 : total),
       0
     );
+  };
+
+  render() {
+    const { todos, filter } = this.state;
+    const totalTodoCount = todos.length;
+    const completedTodosCount = this.calculateCompletedTodos();
+    const visibleTodos = this.getVisibleTodos();
+
     return (
       <>
         <TodoEditor onSubmit={this.addTodo} />
@@ -97,8 +118,10 @@ class App extends Component {
           <p>Quantity of incompleted todos: </p>
         </div>
 
+        <Filter value={filter} onChange={this.changeFilter} />
+
         <TodoList
-          todos={todos}
+          todos={visibleTodos}
           onDeleteTodo={this.deleteTodo}
           onToggleCompleted={this.toggleCompleted}
         />
